@@ -36,7 +36,7 @@ legal_bot/
 
 Если у вас есть Git:
 ```bash
-git clone <ссылка_на_репозиторий>
+git clone https://github.com/bekarysibrashev/telegram_bot_lawer.git
 cd legal_bot
 ```
 
@@ -60,32 +60,19 @@ pip install -r requirements.txt
 
 ### Шаг 5 — Подключите бесплатный AI
 
-#### Вариант A: Groq API (проще, рекомендуется)
+#### Groq API (проще, рекомендуется)
 
 1. Зайдите на https://console.groq.com
 2. Нажмите **"Sign Up"** → зарегистрируйтесь (бесплатно)
 3. Перейдите в раздел **API Keys**
 4. Нажмите **"Create API Key"**
-5. Скопируйте ключ — это ваш `GROQ_API_KEY`
+5. Скопируйте ключ - это ваш `GROQ_API_KEY`
 
 Лимиты бесплатного Groq:
 - ~14,400 запросов/день
 - Модель LLaMA 3 (8B)
 - Без кредитной карты
 
-#### Вариант B: Ollama (локальный, без интернета)
-
-1. Скачайте Ollama: https://ollama.com
-2. Установите и запустите
-3. В терминале выполните:
-   ```bash
-   ollama pull llama3
-   ```
-   (Скачает модель ~4.7 GB)
-4. Проверьте что работает:
-   ```bash
-   ollama run llama3 "Привет"
-   ```
 
 ### Шаг 6 — Настройте конфигурацию
 
@@ -102,10 +89,6 @@ pip install -r requirements.txt
    GROQ_API_KEY=gsk_xxx...ваш_ключ
    GROQ_MODEL=llama3-8b-8192
    
-   # Если используете Ollama — замените на:
-   # AI_PROVIDER=ollama
-   # OLLAMA_URL=http://localhost:11434
-   # OLLAMA_MODEL=llama3
    ```
 
 ### Шаг 7 - Запустите бота
