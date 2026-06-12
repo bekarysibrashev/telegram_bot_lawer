@@ -8,13 +8,14 @@
 
 ```
 legal_bot/
-├── bot.py           # Главный файл бота (точка входа)
-├── ai_client.py     # Подключение к AI (Groq / Ollama)
-├── keyboards.py     # Клавиатуры Telegram
-├── requirements.txt # Зависимости Python
-├── .env.example     # Пример конфигурации
-├── .env             # Ваша конфигурация (создать самому!)
-└── README.md        # Эта инструкция
+├── bot.py             # Главный файл бота (точка входа)
+├── ai_client.py       # Подключение к AI (Groq / Ollama)
+├── keyboards.py       # Клавиатуры Telegram
+├── requirements.txt   # Зависимости Python
+├── .env.example       # Пример конфигурации
+├── knowledge_base.py  # Данные длоя RAG системы
+├── .env               # Ваша конфигурация (создать самому!)
+└── README.md          # Эта инструкция
 ```
 
 ---
